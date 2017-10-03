@@ -1,0 +1,25 @@
+.words-form {
+  width: 400px;
+  margin: 20px auto;
+}
+
+.word {
+  margin: 10px 30px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.word:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 28px;
+  }
+  .words-form {
+    width: 350px;
+  }
+}
