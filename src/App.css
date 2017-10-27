@@ -1,14 +1,24 @@
+h1 {
+  color: #449D44;
+  font-family: 'Lato', sans-serif;
+}
+
 .words-form {
   width: 400px;
   margin: 20px auto;
+}
+
+label {
+  color: #AAA;
 }
 
 .word {
   margin: 10px 30px;
   display: flex;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(100, 100, 100, 0.1);
   border-radius: 10px;
+  transition: 0.5s ease;
 }
 
 .words-list {
@@ -17,14 +27,58 @@
 }
 
 .word:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(100, 100, 100, 0.2);
+  cursor: default;
 }
 
-@media screen and (max-width: 500px) {
+.btn-default {
+  padding: 0px 5px;
+  margin: 10px 0px;
+  background-color: #449D44;
+  border: none;
+  color: #333;
+}
+.btn-default:hover {
+  background-color: #55AE55
+}
+
+.btn {
+  transition: 0.5s ease;
+}
+
+@media screen and (max-width: 650px) {
   h1 {
     font-size: 28px;
   }
   .words-form {
     width: 350px;
+  }
+  .words-list {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .words-list {
+    width: 500px;
+    font-size: 0.8em;
+  }
+  .btn-default {
+    font-size: 0.9em;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .words-list {
+    width: 100%;
+  }
+  .word {
+    margin: 10px 0;
+    border-radius: 0;
+  }
+  .words-form {
+    width: 100%;
+    margin: 20px auto;
   }
 }

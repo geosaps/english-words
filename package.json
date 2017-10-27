@@ -19,7 +19,12 @@
     "lint": "./node_modules/.bin/eslint ."
   },
   "devDependencies": {
+    "babel-jest": "^21.2.0",
+    "deep-freeze": "0.0.1",
+    "enzyme": "^3.1.0",
     "eslint": "^4.8.0",
-    "eslint-plugin-react": "^7.4.0"
+    "eslint-plugin-react": "^7.4.0",
+    "react-addons-test-utils": "^15.6.2",
+    "react-dom": "^16.0.0"
   }
 }
