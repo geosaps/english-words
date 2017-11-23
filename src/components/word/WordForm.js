@@ -15,7 +15,7 @@ class WordForm extends Component {
   render(){
     let _english, _ukrainian
     return(
-      <div className="words-form">
+      <div className="words-form text-center">
         <form onSubmit={e => {
           e.preventDefault();
           var input = {

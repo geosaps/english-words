@@ -1,4 +1,5 @@
-const WordsData = [
+const WordsData = {
+  words: [
   {
     id: 1,
     english: "concise",
@@ -94,6 +95,14 @@ const WordsData = [
     english: "sequential",
     ukrainian: "послідовний"
   },
-]
+],
+  wordCheck: {
+    ukrainian: "",
+    ukrainianDefault: "послідовний",
+    englishDefault: "sequential"
+  },
+  guess: undefined,
+  makeGuess: false
+}
 
 export default WordsData;

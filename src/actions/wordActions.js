@@ -11,3 +11,17 @@ export const removeWord = (id) => {
     id: id
   }
 }
+
+export const generateWord = (word) => {
+  return {
+    type: 'GENERATE_WORD',
+    word: word
+  }
+}
+
+export const checkWord = (word) => {
+  return {
+    type: 'CHECK_WORD',
+    word: word
+  }
+}

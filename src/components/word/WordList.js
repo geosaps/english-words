@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import * as wordActions from '../../actions/wordActions';
+import {Link} from 'react-router';
 
 class WordsList extends Component {
   constructor(props){
@@ -12,8 +13,10 @@ class WordsList extends Component {
   }
 
   render(){
+    // console.log(this.props)
     return(
-      <div className="words-list">
+      <div className="words-list text-center">
+        <Link to={process.env.PUBLIC_URL + '/learn'}><button className="btn btn-success">Learning</button></Link>
         {
           (this.props.words.length === 0) ?
             <p className="text-center">There is no words to display</p> :
@@ -48,7 +51,7 @@ class WordsList extends Component {
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    words: state.words
+    words: state.words.words
   }
 }
 

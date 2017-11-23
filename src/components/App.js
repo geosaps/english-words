@@ -1,15 +1,11 @@
-import React from 'react';
-import WordForm from './word/WordForm';
-import WordsList from './word/WordList';
+import React from 'react'
 
 const App = (props) => {
-  return (
-    <div className="container">
-      <h1 className="text-center">English words:</h1> 
-      <WordForm />
-      <WordsList />
+  return(
+    <div>
+      {props.children}
     </div>
   )
 }
 
-export default App;
+export default App

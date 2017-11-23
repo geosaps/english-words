@@ -46,6 +46,33 @@ label {
   transition: 0.5s ease;
 }
 
+.btn a {
+  color: #FFF;
+}
+
+.btn a:hover {
+  text-decoration: none;
+}
+
+
+/* -------------------------------------
+
+              LEARN
+
+---------------------------------------*/
+
+.learning {
+  width: 60%;
+  margin: 20px auto;
+}
+
+.learning .btn {
+  margin: 20px;
+}
+
+
+
+
 @media screen and (max-width: 650px) {
   h1 {
     font-size: 28px;
